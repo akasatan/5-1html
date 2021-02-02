@@ -1,0 +1,106 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 分かりにくいから色で見る */
+h1 {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+.nav-l {
+  padding: 15px 0;
+  text-align: center;
+  margin: 0 auto;
+  border-bottom: 1px solid #848282;
+  border-top: 1px solid #848282;
+  /* ↑線の付け方 */
+}
+.lili {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  /* ↑paddingの記述いらない */
+}
+/* どうしてliでやっちゃいけないんだ～
+divやspanでやると横並びにならないんだ！？
+もっと効率的なやり方ない？ */
+.wrap {
+  display: flex;
+  flex-wrap: wrap;
+  width: 800px;
+  height: 600px;
+  margin: 50px auto;
+  background-color: teal;
+  /* 見やすいように色を付けてます */
+}
+.wrap1 {
+  width: 200px;
+  height: 200px;
+  background-color: #e6ffe9;
+}
+.wrap2 {
+  width: 200px;
+  height: 200px;
+  background-color: #cbffd3;
+}
+.wrap3 {
+  width: 200px;
+  height: 200px;
+  background-color: #aeffbd;
+}
+.wrap4 {
+  width: 200px;
+  height: 200px;
+  background-color: #93ffad;
+}
+.wrap5 {
+  width: 200px;
+  height: 200px;
+  background-color: #f3ffd8;
+}
+.wrap6 {
+  width: 200px;
+  height: 200px;
+  background-color: #edffbe;
+}
+.wrap7 {
+  width: 200px;
+  height: 200px;
+  background-color: #e9ffa5;
+}
+.wrap8 {
+  width: 200px;
+  height: 200px;
+  background-color: #e4ff8d;
+}
+.wrap9 {
+  width: 200px;
+  height: 200px;
+  background-color: #d9e5ff;
+}
+.wrap10 {
+  width: 200px;
+  height: 200px;
+  background-color: #bad3ff;
+}
+.wrap11 {
+  width: 200px;
+  height: 200px;
+  background-color: #a4c6ff;
+}
+.wrap12 {
+  width: 200px;
+  height: 200px;
+  background-color: #8eb8ff;
+}
+footer {
+  height: 120px;
+  text-align: center;
+  background-color: grey;
+  line-height: 120px;
+}
+.f-t {
+  color: white;
+}
