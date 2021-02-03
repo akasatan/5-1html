@@ -12,31 +12,18 @@ header {
 }
 .heading {
   padding: 20px;
-  text-align: left;
   color: gray;
 }
 main {
-  display: flex;
-  justify-content: center;
-  padding: 50px 0;
-  margin: 0 auto;
   width: 840px;
-  background-position: center;
-}
-.blog-box {
-  display: flex;
-  justify-content: start;
+  margin: 50px auto;
 }
 .blog-heading {
-  border-bottom: 1px solid #f7f7f767; /* 線を引くコマンド */
-  text-align: left;
+  border-bottom: 1px solid #d1d1d1; /* 線を引くコマンド */
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
-.blog-text {
-  text-align: left;
-  color: gray;
-  font-size: 18px;
-}
-a {
-  text-align: left;
-  color: gray;
+.blog-heading-end {
+  padding-bottom: 30px;
+  border-bottom: 1px solid #d1d1d1;
 }
