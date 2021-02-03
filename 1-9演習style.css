@@ -1,0 +1,65 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.orange {
+  height: 50px;
+  background-color: #ff9a4b;
+}
+main {
+  width: 960px;
+  margin: 50px 0;
+  display: flex;
+  /*外枠の余白50pxとflex-boxの準備*/
+}
+.blog-box {
+  width: 300px;
+  background-color: #EEEEEE;
+  margin: 10px 10px 15px 10px;
+}
+.blog-box:first-child(n + 2) {
+  padding-right: 30px;
+}
+.step {
+  position: relative;
+  left: 0%;
+  top: 0%;
+  background-color: #ff9a4b;
+  color: white;
+  width: 100%;
+  /*上のオレンジの枠*/
+}
+.blog-image1 {
+  background-image: url(img/flow01.png);
+  width: 300px;
+  height: 150px;
+  background-size: cover;
+  margin: 10px 10px 15px 10px;
+}
+.blog-image2 {
+  background-image: url(img/flow02.png);
+  width: 300px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+  /*画像中央揃え*/
+}
+.blog-image3 {
+  background-image: url(img/flow03.png);
+  width: 300px;
+  height: 150px;
+  background-size: cover;
+  background-position: center;
+}
+.setumei{
+  padding-bottom: 5px;
+  /*タイトルが入りますの下の5px*/
+}
+.tittle {
+  padding: 15px 0 5px 0;
+}
+footer {
+  height: 50px;
+  background-color: gray;
+}
