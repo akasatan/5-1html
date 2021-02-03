@@ -3,8 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
-.fa-facebook-square,
-.fa-twitter {
+.fab {
   font-size: 32px;
 }
 .position {
