@@ -2,45 +2,47 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  color: #fff;
 }
 main {
-  padding: 50px 0;
+  margin: 50px auto;
+  /*全体の上下に50pxの余白maeginは外側paddingは内側*/
   width: 960px;
 }
-li{
-  line-height: 40px;
-  height: 40px;
-  background-color: gray;
-  color: black;
+.item-list{
+  margin-bottom: 50px;
+  /* リスト7の下の50pxの余白 */
+}
+.item{
+  padding: 20px;
+  /*リストの文字の四方に20pxの余白*/
   list-style: none;
 }
-li:nth-last-child(even){
-  background-color: white;
+.item:nth-child(odd){
+  background-color: #eee;
 }
 .main-box{
-  width: 960px;
-  margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
+  /*折り返すflexboxを作る*/
 }
 .box {
   height: 200px;
   width: 30%;
   background-color: yellow;
+  margin-right: 5%;
+  margin-bottom: 40px;
+  /* カラフル四角の間の白い余白の設定 */
 }
-.box:nth-child(1) {
+.box:first-child,
+.box:nth-child(5),
+.box:last-child {
   background-color: orange;
-  height: 200px;
-  width: 30%;
 }
-.box:nth-child(5) {
-  background-color: orange;
-  height: 200px;
-  width: 30%;
+.box:nth-child(3n){
+  margin-right: 0;
+  /* 右側は余白なし */
 }
-.box:nth-child(9) {
-  background-color: orange;
-  height: 200px;
-  width: 30%;
+.box:nth-last-child(-n+3){
+  /*lastchildの-n+3は最後から３つ分を表す*/
+  margin-bottom: 0;
 }
