@@ -9,14 +9,17 @@ header {
   height: 70px;
   background-color: #ec715f;
 }
+h3 {
+  font-weight: bold;
+}
 .container {
   width: 1024px;
   margin: 0 auto;
+  width: 90%;
 }
 .logoimg {
   height: 70px;
-  text-align: left;
-  position: absolute;
+  float: left;
 }
 .nav-list {
   font-size: 16px;
@@ -61,16 +64,17 @@ a {
   color: #000000;
 }
 .heading::after {
-  content: none;
+  content: ""; /*入れる文字*/
+  display: block;
   width: 70px;
-  height: 3pc;
+  height: 3px;
   margin: 8px auto 0 auto;
   background-color: #ec715f;
 }
 .heading-text {
   text-align: center;
   padding: 30px 0;
-  text-size: 16px;
+  font-size: 16px;
   color: #000000;
 }
 .production-group {
@@ -88,6 +92,9 @@ a {
 }
 .production:nth-child(3n) {
   padding-right: -10px;
+}
+i {
+  font-size: 50px;
 }
 .dg-1 {
   background-image: url(img/sketch.jpg);
@@ -134,4 +141,204 @@ a {
 .st1,
 .st2 {
   margin-right: 10px;
+}
+#Profile {
+  background-color: #eceff1;
+}
+.profile-group {
+  display: flex;
+  padding-bottom: 90px;
+}
+.my-profile-img {
+  border-radius: 50%;
+  height: 250px;
+  width: 250px;
+  text-align: center;
+}
+.left-content {
+  width: 512px;
+  text-align: center;
+}
+.right-content {
+  width: 512px;
+}
+.my-name {
+  font-size: 20px;
+  padding: 30px 0 5px 0;
+  text-align: left;
+}
+.my-skills {
+  font-size: 20px;
+  padding: 20px 0 5px 0;
+  text-align: left;
+}
+.sns-container {
+  width: 800px;
+  margin: 0 auto;
+}
+.sns-container2 {
+  display: flex;
+  padding-bottom: 90px;
+}
+.sns-left-content {
+  width: 130px;
+  margin: 0 auto;
+}
+.sns-right-content {
+  width: 180px;
+  margin: 0 auto;
+}
+.sns-left {
+  width: 400px;
+}
+.sns-right {
+  width: 400px;
+  text-align: center;
+}
+.sns-icon {
+  padding-right: 20px;
+}
+.sns-icon:last-child {
+  padding-right: 0px;
+}
+footer {
+  height: 60px;
+  background-color: #ec715f;
+}
+.copy-right {
+  color: #fafafa;
+  font-size: 16px;
+  text-align: center;
+  line-height: 70px;
+}
+@media screen and (max-width: 1024px) {
+  * {
+    box-sizing: border-box;
+    margin: 0 auto;
+  }
+  .container {
+    margin: 0 auto;
+    text-align: center;
+    width: 90%;
+  }
+  header {
+    height: 50px;
+  }
+  .logoimg {
+    height: 50px;
+    float: left;
+  }
+  /* ↓ハンバーガーメニュー */
+  .menu-box {
+    float: right;
+    width: 40px;
+    height: 40px;
+    margin-right: 5%;
+    border: 1px solid #fafafa;
+    margin-top: 5px;
+    margin-bottom: 5px;
+  }
+  .list-bar {
+    display: block;
+    width: 25px;
+    height: 2px;
+    margin: 5px auto;
+    background-color: #fafafa;
+  }
+  .list-bar:first-child {
+    margin-top: 10px;
+  }
+  .nav {
+    display: none;
+  }
+  #mv {
+    height: 650px;
+  }
+  .lorem-img {
+    background-image: url(img/code.png);
+    background-size: cover;
+    background-position: center;
+    height: 650px;
+    width: 100%;
+  }
+  .mv-title {
+    padding-top: 200px;
+    padding-bottom: 10px;
+    font-size: 40px;
+  }
+  .mv-text {
+    font-size: 18px;
+  }
+  .heading::after {
+    height: 3px;
+    width: 70px;
+    text-align: center;
+    color: #ec715f;
+  }
+  .heading-text {
+    font-size: 16px;
+    padding: 30px auto 30px auto;
+    text-align: center;
+  }
+  .production:nth-child(odd) {
+    display: none;
+  }
+  .production:nth-child(even) {
+    height: 250px;
+    width: 300px;
+    margin-bottom: 10px;
+  }
+  .production:last-child {
+    margin-bottom: 0px;
+  }
+  /* profileのflex解除 */
+  .production-group {
+    display: block;
+    width: 300px;
+  }
+  .st1,
+  .st2 {
+    padding-bottom: 10px;
+  }
+  .profile-group {
+    display: block;
+  }
+  .heading-text2 {
+    text-align: center;
+  }
+  .left-content {
+    width: 90%;
+  }
+  .right-content {
+    width: 90%;
+  }
+  .my-text {
+    text-align: center;
+  }
+  .my-name,
+  .my-skills {
+    text-align: center;
+  }
+  .sns-container {
+    width: 90%;
+  }
+  .sns-container2 {
+    display: block;
+  }
+  .sns-left,
+  .sns-right {
+    width: 90%;
+  }
+  .mail {
+    padding-top: 0;
+  }
+  .sns-icon {
+    font-size: 50px;
+    width: 50px;
+    padding-right: 8px;
+    margin: 0;
+  }
+  .sns-icon:last-child {
+    padding-right: 0;
+  }
 }
